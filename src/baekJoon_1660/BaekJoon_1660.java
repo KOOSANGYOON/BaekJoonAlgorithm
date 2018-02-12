@@ -54,7 +54,7 @@ public class BaekJoon_1660 {
 		
 		fillShapeList(input);
 		
-		smallestCount = 300000;
+		smallestCount = 300000;		//임의의 큰 정수 입력
 		
 		makeShape(input, 1);
 		
