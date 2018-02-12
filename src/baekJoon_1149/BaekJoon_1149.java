@@ -10,6 +10,31 @@ import java.util.Scanner;
  */
 public class BaekJoon_1149 {
 	static List<int[]> totalCostList = new ArrayList<int[]> ();
+	static List<Integer> totalFillCost = new ArrayList<Integer> ();
+	
+	static int checkCheapest() {
+		if (totalFillCost.size() == 0) {
+			return -1;
+		}
+		
+		int result = totalFillCost.get(0);
+		for (int cost : totalFillCost) {
+			if (result > cost) {
+				result = cost;
+			}
+		}
+		return result;
+	}
+	
+	static void fillColor(int houseNum, int colorNum) {
+		if (houseNum < 1) {
+			return;
+		}
+		
+		int[] costList = totalCostList.get(houseNum - 1);
+		int result = costList[colorNum];
+		
+	}
 	
 	static int[] convertToInteger(String[] input) {
 		int[] result = new int[input.length];
@@ -32,10 +57,9 @@ public class BaekJoon_1149 {
 			totalCostList.add(colorCost);
 		}
 		
-		for (int[] cost : totalCostList) {
-			for (int i : cost) {
-				System.out.println(i);
-			}
+		for (int i = 0; i < 3; i++) {
+//			totalFillCost.add(totalCostList.get(i)[i]);
+			fillColor(totalHouseNum, i);
 		}
 	}
 }
