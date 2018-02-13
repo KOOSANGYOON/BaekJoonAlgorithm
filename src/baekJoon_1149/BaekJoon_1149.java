@@ -1,7 +1,5 @@
 package baekJoon_1149;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -9,57 +7,53 @@ import java.util.Scanner;
  * https://www.acmicpc.net/problem/1149
  */
 public class BaekJoon_1149 {
-	static List<int[]> totalCostList = new ArrayList<int[]> ();
-	static List<Integer> totalFillCost = new ArrayList<Integer> ();
-	
-	static int checkCheapest() {
-		if (totalFillCost.size() == 0) {
-			return -1;
-		}
-		
-		int result = totalFillCost.get(0);
-		for (int cost : totalFillCost) {
-			if (result > cost) {
-				result = cost;
-			}
-		}
-		return result;
-	}
-	
-	static void fillColor(int houseNum, int colorNum) {
-		if (houseNum < 1) {
+	static int cheapestCost;
+	static int[][] costList;
+
+	static void searchCheapCost(int count, int skipNum, int beforeCost) {
+		if (count == costList.length) {
+//			System.out.println("end to search in this line");
+			cheapestCost = beforeCost;
 			return;
 		}
-		
-		int[] costList = totalCostList.get(houseNum - 1);
-		int result = costList[colorNum];
-		
-	}
-	
-	static int[] convertToInteger(String[] input) {
-		int[] result = new int[input.length];
-		
-		for (int i = 0; i < input.length; i++) {
-			result[i] = Integer.parseInt(input[i]);
-		}
-		return result;
-	}
-	
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		
-		int totalHouseNum = scan.nextInt();
-		scan.nextLine();
-		
-		for (int i = 0; i < totalHouseNum; i++) {
-			String[] stringCost = scan.nextLine().split(" ");
-			int[] colorCost = convertToInteger(stringCost);
-			totalCostList.add(colorCost);
-		}
-		
+
 		for (int i = 0; i < 3; i++) {
-//			totalFillCost.add(totalCostList.get(i)[i]);
-			fillColor(totalHouseNum, i);
+			if (i == skipNum) {
+//				System.out.println("skip because skipNum is " + skipNum);
+				continue;
+			}
+
+			int recentCost = beforeCost + costList[count][i];
+			if (recentCost >= cheapestCost) {
+//				System.out.println("it's too expensive. out!");
+				continue;
+			}
+//			System.out.println("go to (count : " + count + ") (cost : " + recentCost + ")");
+			searchCheapCost(count + 1, i, recentCost);
 		}
+	}
+
+	public static void main(String[] args) {
+		cheapestCost = Integer.MAX_VALUE;
+		Scanner scan = new Scanner(System.in);
+
+		int input = scan.nextInt();
+		scan.nextLine();
+
+		costList = new int[input][3];
+
+		for (int i = 0; i < input; i++) {
+			String[] cost = scan.nextLine().split(" ");
+			costList[i][0] = Integer.parseInt(cost[0]);
+			costList[i][1] = Integer.parseInt(cost[1]);
+			costList[i][2] = Integer.parseInt(cost[2]);
+		}
+
+		for (int i = 0; i < 3; i++) {
+			searchCheapCost(1, i, costList[0][i]);
+		}
+
+		System.out.println(cheapestCost);
+		scan.close();
 	}
 }
