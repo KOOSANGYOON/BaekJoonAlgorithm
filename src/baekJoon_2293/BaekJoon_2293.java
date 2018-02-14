@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * BaekjoonOnlineJudge#2293 동전1
+ * BaekjoonOnlineJudge#2293 동전 1
  * https://www.acmicpc.net/problem/2293
  */
 public class BaekJoon_2293 {
@@ -20,14 +20,13 @@ public class BaekJoon_2293 {
 	}
 
 	static void chooseCoin(int totalMoney, int index) {
-//		System.out.println("totalMoney is " + totalMoney + " coin is " + typesOfCoins[index] + " index is " + index);
+		//		System.out.println("totalMoney is " + totalMoney + " coin is " + typesOfCoins[index] + " index is " + index);
 		if (totalMoney == 0) {
-//			System.out.println("total money is zero. So return.");
+			//			System.out.println("total money is zero. So return.");
 			totalCount++;
 			return;
 		}
-		
-		
+
 		for (int i = index; i >= 0; i--) {
 			int change = totalMoney;
 			if (change < typesOfCoins[i]) {
@@ -53,9 +52,9 @@ public class BaekJoon_2293 {
 		for (int i = 0; i < typesOfCoins.length; i++) {
 			typesOfCoins[i] = scan.nextInt();
 		}
-		
+
 		Arrays.sort(typesOfCoins);
-		
+
 		chooseCoin(wantToMake, typesOfCoins.length - 1);
 		System.out.println(totalCount);
 		scan.close();
