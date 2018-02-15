@@ -40,7 +40,6 @@ public class BaekJoon_2293 {
 			chooseCoin(change, i);
 		}
 	}
-
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String[] input = scan.nextLine().split(" ");
