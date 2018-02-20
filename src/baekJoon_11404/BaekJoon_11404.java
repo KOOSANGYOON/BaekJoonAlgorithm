@@ -24,6 +24,8 @@ public class BaekJoon_11404 {
 				costTable[startCity-1][destination-1] = cost;
 			}
 		}
+		
+		scan.close();
 
 		for (int k = 0; k < totalCityNum; k++) {
 			for (int i = 0; i < totalCityNum; i++) {
@@ -54,6 +56,5 @@ public class BaekJoon_11404 {
 			}
 			System.out.println("");
 		}
-		scan.close();
 	}
 }
