@@ -44,7 +44,6 @@ public class BaekJoon_2193 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int input = scan.nextInt();
-		scan.nextLine();
 		scan.close();
 
 		resultList = new int[input][10];
