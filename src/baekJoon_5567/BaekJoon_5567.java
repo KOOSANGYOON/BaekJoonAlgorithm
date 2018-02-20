@@ -20,6 +20,7 @@ public class BaekJoon_5567 {
 			int ai = scan.nextInt();
 			int bi = scan.nextInt();
 			friendList[ai].addFriend(bi);
+			friendList[bi].addFriend(ai);
 		}
 
 		int[] result = new int[n + 1];
@@ -29,11 +30,11 @@ public class BaekJoon_5567 {
 
 		for (int i = 1; i <= n; i++) {
 			if (friendList[1].isExist(i)) {
-				System.out.println(1 + " 의 친구는 " + i + " 입니다. 그렇다면...");
+//				System.out.println(1 + " 의 친구는 " + i + " 입니다. 그렇다면...");
 				result[i] = 1;
 				for (int j = 1; j <= n; j++) {
 					if (friendList[i].isExist(j) && result[j] != 1) {
-						System.out.println(i + " 의 친구는 누구일까요 ? 아직까지 등록이 안되어있는 친구는 바로!! " + j + " 입니다!!!");
+//						System.out.println(i + " 의 친구는 누구일까요 ? 아직까지 등록이 안되어있는 친구는 바로!! " + j + " 입니다!!!");
 						result[j] = 1;
 					}
 				}
@@ -45,7 +46,8 @@ public class BaekJoon_5567 {
 				count++;
 			}
 		}
-		System.out.println(count);
+		
+		System.out.println(count - 1);
 		scan.close();
 	}
 }
