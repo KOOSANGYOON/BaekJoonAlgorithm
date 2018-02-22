@@ -37,11 +37,15 @@ public class BaekJoon_10026 {
 					isVisited[i][j] = true;
 					
 					String temp = q.poll();
+					
 				}
 			}
 		}
 	}
 	
+	static void checkAround() {
+		
+	}
 
 	public static void main(String[] args) {
 		checkZone(inputData());
