@@ -22,7 +22,7 @@ public class BaekJoon_10026 {
 				isVisited[i][j] = false;
 			}
 		}
-
+		scan.close();
 		return size;
 	}
 
@@ -37,7 +37,6 @@ public class BaekJoon_10026 {
 					isVisited[i][j] = true;
 					
 					String temp = q.poll();
-					
 				}
 			}
 		}
