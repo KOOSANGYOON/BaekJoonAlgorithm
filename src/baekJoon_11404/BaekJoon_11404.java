@@ -1,7 +1,10 @@
 package baekJoon_11404;
 
 import java.util.Scanner;
-
+/*
+ * BaekjoonOnlineJudge#11404 플로이드
+ * https://www.acmicpc.net/problem/11404
+ */
 public class BaekJoon_11404 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

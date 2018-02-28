@@ -1,7 +1,10 @@
 package baekJoon_5567;
 
 import java.util.Scanner;
-
+/*
+ * BaekjoonOnlineJudge#5567 결혼식
+ * https://www.acmicpc.net/problem/5567
+ */
 public class BaekJoon_5567 {
 	static friends[] friendList;
 

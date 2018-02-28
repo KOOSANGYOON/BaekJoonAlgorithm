@@ -1,7 +1,10 @@
 package baekJoon_2193;
 
 import java.util.Scanner;
-
+/*
+ * BaekjoonOnlineJudge#2193 이친수
+ * https://www.acmicpc.net/problem/2193
+ */
 public class BaekJoon_2193_2 {
 	static count[] totalCount;
 	

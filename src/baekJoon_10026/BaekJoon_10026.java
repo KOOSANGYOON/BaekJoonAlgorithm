@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-
+/*
+ * BaekjoonOnlineJudge#10026 적록색약
+ * https://www.acmicpc.net/problem/10026
+ */
 public class BaekJoon_10026 {
 	static String[][] RGBtable;
 	static boolean[][] isVisited;

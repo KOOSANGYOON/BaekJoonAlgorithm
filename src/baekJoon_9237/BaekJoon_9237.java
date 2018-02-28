@@ -2,7 +2,10 @@ package baekJoon_9237;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+/*
+ * BaekjoonOnlineJudge#9237 이장님 초대
+ * https://www.acmicpc.net/problem/9237
+ */
 public class BaekJoon_9237 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
