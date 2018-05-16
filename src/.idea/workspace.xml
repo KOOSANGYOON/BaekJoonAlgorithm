@@ -16,16 +16,25 @@
         <entry file="file://$PROJECT_DIR$/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaekJoon_11057.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/baekJoon_11057/BaekJoon_11057.java">
+      <file leaf-file-name="BaekJoon_1149_origin_notcomplete.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149_origin_notcomplete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaekJoon_1149.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -49,8 +58,10 @@
       <list>
         <option value="$PROJECT_DIR$/test/Test2.java" />
         <option value="$PROJECT_DIR$/baekJoon_2294/BaekJoon_2294.java" />
-        <option value="$PROJECT_DIR$/test/Test.java" />
         <option value="$PROJECT_DIR$/baekJoon_11057/BaekJoon_11057.java" />
+        <option value="$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149_origin_notcomplete.java" />
+        <option value="$PROJECT_DIR$/test/Test.java" />
+        <option value="$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149.java" />
       </list>
     </option>
   </component>
@@ -81,6 +92,11 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="baekJoon_1149" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -123,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BaekJoon_11057">
+  <component name="RunManager" selected="Application.BaekJoon_1149_re_challenge_complete">
     <configuration name="BaekJoon_1000" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekJoon_1000.BaekJoon_1000" />
       <module name="BaekJoonAlgorithm" />
@@ -153,6 +169,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="baekJoon_11399.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="BaekJoon_1149_re_challenge_complete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekJoon_1149.BaekJoon_1149_re_challenge_complete" />
+      <module name="BaekJoonAlgorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekJoon_1149.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,11 +241,13 @@
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.BaekJoon_11399" />
       <item itemvalue="Application.BaekJoon_11057" />
+      <item itemvalue="Application.BaekJoon_1149_re_challenge_complete" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BaekJoon_11057" />
+        <item itemvalue="Application.BaekJoon_1149_re_challenge_complete" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.BaekJoon_11057" />
         <item itemvalue="Application.BaekJoon_11399" />
         <item itemvalue="Application.BaekJoon_1000" />
       </list>
@@ -235,12 +264,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526281966199</updated>
       <workItem from="1526281967657" duration="4345000" />
-      <workItem from="1526355298422" duration="7782000" />
+      <workItem from="1526355298422" duration="9473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12127000" />
+    <option name="totallyTimeSpent" value="13818000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -264,12 +293,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32854864" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32827586" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827586" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
       <window_info anchor="bottom" id="Inspection Results" weight="0.32965517" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -349,13 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baekJoon_11047/BaekJoon_11047.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -367,6 +389,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149_origin_notcomplete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

@@ -6,7 +6,7 @@ import java.util.Scanner;
  * BaekjoonOnlineJudge#1149 RGB거리
  * https://www.acmicpc.net/problem/1149
  */
-public class BaekJoon_1149 {
+public class BaekJoon_1149_origin_notcomplete {
 	static int cheapestCost;
 	static int[][] costList;
 
