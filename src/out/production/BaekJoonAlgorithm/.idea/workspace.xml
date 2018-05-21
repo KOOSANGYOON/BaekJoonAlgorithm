@@ -11,12 +11,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="495">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WoowaTest5.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/WoowaTest5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +56,10 @@
         <option value="$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149_origin_notcomplete.java" />
         <option value="$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149.java" />
         <option value="$PROJECT_DIR$/baekJoon_1149/BaekJoon_1149_re_challenge_complete.java" />
+        <option value="$PROJECT_DIR$/baekjoon_1890/BaekJoon_1890.java" />
+        <option value="$PROJECT_DIR$/baekjoon_1890/BaekJoon_1890_vol1_notcorrect.java" />
         <option value="$PROJECT_DIR$/test/Test.java" />
+        <option value="$PROJECT_DIR$/test/WoowaTest5.java" />
       </list>
     </option>
   </component>
@@ -66,7 +81,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -78,6 +94,11 @@
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="baekJoon_1149" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="baekjoon_1890" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -98,8 +119,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,18 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="BaekJoon_1000" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekJoon_1000.BaekJoon_1000" />
-      <module name="BaekJoonAlgorithm" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baekJoon_1000.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.WoowaTest5">
     <configuration name="BaekJoon_11057" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekJoon_11057.BaekJoon_11057" />
       <module name="BaekJoonAlgorithm" />
@@ -140,17 +149,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="baekJoon_11057.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="BaekJoon_11399" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekJoon_11399.BaekJoon_11399" />
-      <module name="BaekJoonAlgorithm" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baekJoon_11399.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,8 +164,30 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="BaekJoon_1890" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon_1890.BaekJoon_1890" />
+      <module name="BaekJoonAlgorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekjoon_1890.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="BaekJoonAlgorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="WoowaTest5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.WoowaTest5" />
       <module name="BaekJoonAlgorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -219,19 +239,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.BaekJoon_1000" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.BaekJoon_11399" />
       <item itemvalue="Application.BaekJoon_11057" />
       <item itemvalue="Application.BaekJoon_1149_re_challenge_complete" />
+      <item itemvalue="Application.BaekJoon_1890" />
+      <item itemvalue="Application.WoowaTest5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WoowaTest5" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.BaekJoon_1890" />
         <item itemvalue="Application.BaekJoon_1149_re_challenge_complete" />
         <item itemvalue="Application.BaekJoon_11057" />
-        <item itemvalue="Application.BaekJoon_11399" />
-        <item itemvalue="Application.BaekJoon_1000" />
       </list>
     </recent_temporary>
   </component>
@@ -247,12 +267,13 @@
       <updated>1526281966199</updated>
       <workItem from="1526281967657" duration="4345000" />
       <workItem from="1526355298422" duration="9902000" />
-      <workItem from="1526534635438" duration="1036000" />
+      <workItem from="1526534635438" duration="8814000" />
+      <workItem from="1526633529143" duration="1958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15283000" />
+    <option name="totallyTimeSpent" value="25019000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -275,19 +296,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32854864" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32827586" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32965517" />
@@ -305,6 +326,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -383,10 +411,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/baekjoon_1890/BaekJoon_1890.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baekjoon_1890/BaekJoon_1890_vol1_notcorrect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="495">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/WoowaTest5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
