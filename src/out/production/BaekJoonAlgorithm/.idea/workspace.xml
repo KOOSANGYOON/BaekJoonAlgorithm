@@ -15,20 +15,42 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WoowaTest5.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/WoowaTest5.java">
+      <file leaf-file-name="woowaTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/woowa_2/woowaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="361">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#446#455#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WoowaTest_2_2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/woowa_2/WoowaTest_2_2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WoowaTest_2_3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/woowa_2/WoowaTest_2_3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -43,6 +65,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>package test\;\n\nimport java\.util\.Scanner\;\n\n\npublic class WoowaTest5 \{\n    public static void main\(String\[\] args\) \{\n        Scanner scan \= new Scanner\(System\.in\)\;\n        int size \= scan\.nextInt\(\)\;\n        int\[\] input \= new int\[size\]\;\n\n        for \(int i \= 0\; i \&lt; size\; i\+\+\) \{\n            input\[i\] \= scan\.nextInt\(\)\;\n        \}\n\n        int K \= scan\.nextInt\(\)\;\n        int L \= scan\.nextInt\(\)\;\n\n        int result \= solution\(input\, K\, L\)\;\n        System\.out\.println\(result\)\;\n    \}\n\n    public static int solution\(int\[\] A\, int K\, int L\) \{\n        \/\/ write your code in Java SE 8\n        if \(A\.length \&lt; K \+ L\) \{\n            return \-1\;\n        \}\n\n        int sumResult \= 0\;\n        for \(int i \= 0\; i \&lt;\= A\.length \- \(K \+ L\)\; i\+\+\) \{\n            int sumK \= 0\;\n            int sumL \= 0\;\n            for \(int k \= i\; k \&lt; i \+ K\; k\+\+\) \{\n                sumK \+\= A\[k\]\;\n            \}\n\/\/            for \(int j \= i \+ K\; j \&lt; A\.length \- L\; j\+\+\) \{\n\/\/                sumL \+\= A\[j\]\;\n\/\/            \}\n\n\n            if \(sumResult \&lt; sumK \+ sumL\) \{\n                System\.out\.println\(\&quot;sum K \: \&quot; \+ sumK\)\;\n                System\.out\.println\(\&quot;sum L \: \&quot; \+ sumL\)\;\n                sumResult \= sumK \+ sumL\;\n            \}\n        \}\n        return sumResult\;\n    \}\n\}\n\n\/\/woowa test 4\n\/\/import java\.util\.\*\;\n\/\/\n\/\/class Solution \{\n\/\/    public int solution\(int A\, int B\, int C\, int D\) \{\n\/\/        int arr\[\] \= new int\[4\]\;\n\/\/        arr\[0\] \= A\;\n\/\/        arr\[1\] \= B\;\n\/\/        arr\[2\] \= C\;\n\/\/        arr\[3\] \= D\;\n\/\/        Arrays\.sort\(arr\)\;\n\/\/        int result \= \(int\)Math\.pow\(arr\[3\] \- arr\[0\]\, 2\) \+ \(int\)Math\.pow\(arr\[2\] \- arr\[1\]\, 2\)\;\n\/\/        return result\;\n\/\/    \}\n\/\/\}\n\n    public static void main\(String\[\] args\) \{\n        Scanner sc \= new Scanner\(System\.in\)\;\n        String a \= sc\.next\(\)\;\n        String b \= sc\.next\(\)\;\n        String strArr\[\] \= new String\[2\]\;\n        strArr\[0\] \= a\;\n        strArr\[1\] \= b\;\n        int intArr\[\] \= new int\[2\]\;\n        int cnt \= 0\;\n        for \(int i \= 0\; i \&lt; a\.length\(\)\; i\+\+\) \{\n            for \(int j \= 0\; j \&lt; 2\; j\+\+\) \{\n                if \(isStringNum\(strArr\[j\]\.substring\(i\, i \+ 1\)\)\) \{\n                    intArr\[j\] \= \(int\) strArr\[j\]\.charAt\(i\) \- 48\;\n                \} else \{\n                    if \(strArr\[j\]\.charAt\(i\) \=\= \'T\'\) \{\n                        intArr\[j\] \= 10\;\n                    \}\n                    if \(strArr\[j\]\.charAt\(i\) \=\= \'J\'\) \{\n                        intArr\[j\] \= 11\;\n                    \}\n                    if \(strArr\[j\]\.charAt\(i\) \=\= \'Q\'\) \{\n                        intArr\[j\] \= 12\;\n                    \}\n                    if \(strArr\[j\]\.charAt\(i\) \=\= \'K\'\) \{\n                        intArr\[j\] \= 13\;\n                    \}\n                    if \(strArr\[j\]\.charAt\(i\) \=\= \'A\'\) \{\n                        intArr\[j\] \= 14\;\n                    \}\n                \}\n            \}\n            if \(intArr\[0\] \&gt; intArr\[1\]\) \{\n                cnt\+\+\;\n            \}\n        \}\n        System\.out\.println\(cnt\)\;\n    \}\n\n    public static boolean isStringNum\(String s\) \{\n        try \{\n            Integer\.parseInt\(s\)\;\n            return true\;\n        \} catch \(NumberFormatException e\) \{\n            return false\;\n        \}\n    \}</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -59,7 +84,12 @@
         <option value="$PROJECT_DIR$/baekjoon_1890/BaekJoon_1890.java" />
         <option value="$PROJECT_DIR$/baekjoon_1890/BaekJoon_1890_vol1_notcorrect.java" />
         <option value="$PROJECT_DIR$/test/Test.java" />
+        <option value="$PROJECT_DIR$/test/Test12.java" />
         <option value="$PROJECT_DIR$/test/WoowaTest5.java" />
+        <option value="$PROJECT_DIR$/test/Aaaaa.java" />
+        <option value="$PROJECT_DIR$/woowa_2/WoowaTest_2_3.java" />
+        <option value="$PROJECT_DIR$/woowa_2/woowaTest.java" />
+        <option value="$PROJECT_DIR$/woowa_2/WoowaTest_2_2.java" />
       </list>
     </option>
   </component>
@@ -81,7 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -93,38 +123,24 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baekJoon_1149" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baekjoon_1890" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baekJoon_2293" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="baekJoon_11047" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="woowa_2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -141,36 +157,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WoowaTest5">
-    <configuration name="BaekJoon_11057" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekJoon_11057.BaekJoon_11057" />
+  <component name="RunManager" selected="Application.woowaTest">
+    <configuration name="Aaaaa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Aaaaa" />
       <module name="BaekJoonAlgorithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baekJoon_11057.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="BaekJoon_1149_re_challenge_complete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekJoon_1149.BaekJoon_1149_re_challenge_complete" />
-      <module name="BaekJoonAlgorithm" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baekJoon_1149.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="BaekJoon_1890" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baekjoon_1890.BaekJoon_1890" />
-      <module name="BaekJoonAlgorithm" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baekjoon_1890.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,8 +191,30 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="WoowaTest_2_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="woowa_2.WoowaTest_2_2" />
+      <module name="BaekJoonAlgorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="woowa_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="woowaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="woowa_2.woowaTest" />
+      <module name="BaekJoonAlgorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="woowa_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -240,18 +256,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.BaekJoon_11057" />
-      <item itemvalue="Application.BaekJoon_1149_re_challenge_complete" />
-      <item itemvalue="Application.BaekJoon_1890" />
       <item itemvalue="Application.WoowaTest5" />
+      <item itemvalue="Application.Aaaaa" />
+      <item itemvalue="Application.woowaTest" />
+      <item itemvalue="Application.WoowaTest_2_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.woowaTest" />
+        <item itemvalue="Application.WoowaTest_2_2" />
         <item itemvalue="Application.WoowaTest5" />
+        <item itemvalue="Application.Aaaaa" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.BaekJoon_1890" />
-        <item itemvalue="Application.BaekJoon_1149_re_challenge_complete" />
-        <item itemvalue="Application.BaekJoon_11057" />
       </list>
     </recent_temporary>
   </component>
@@ -268,12 +284,13 @@
       <workItem from="1526281967657" duration="4345000" />
       <workItem from="1526355298422" duration="9902000" />
       <workItem from="1526534635438" duration="8814000" />
-      <workItem from="1526633529143" duration="1958000" />
+      <workItem from="1526633529143" duration="6670000" />
+      <workItem from="1527305838499" duration="12170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25019000" />
+    <option name="totallyTimeSpent" value="41901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,6 +307,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854864" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32965517" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -301,8 +319,9 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657512" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -315,8 +334,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32965517" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +343,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -425,17 +449,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/Aaaaa.java" />
+    <entry file="file://$PROJECT_DIR$/test/WoowaTest5.java" />
     <entry file="file://$PROJECT_DIR$/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/WoowaTest5.java">
+    <entry file="file://$PROJECT_DIR$/woowa_2/WoowaTest_2_3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="88">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/woowa_2/woowaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#446#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/woowa_2/WoowaTest_2_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
